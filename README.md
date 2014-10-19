@@ -15,3 +15,32 @@ Add global composer to $PATH
 Create a new project
 
     laravel new blog
+
+or
+
+    composer create-project laravel/laravel laravel-5-project-name dev-develop --prefer-dist
+
+Update the namespace of the app
+
+    php artisan app:name NamespaceName
+
+Setup the environment
+
+    mv .env.example .env
+
+    APP_ENV=local
+    APP_KEY=SomeRandomString
+    ...
+
+Routes are now in the controllers
+---------------
+
+    # app/Http/Controllers/HomeController.php
+
+    /**
+     * @Get("/")
+     */
+    public function index()
+    {
+      ...
+    }
