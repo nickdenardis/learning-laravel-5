@@ -44,3 +44,14 @@ Routes are now in the controllers
     {
       ...
     }
+    
+Add any new controllers to the RouteServiceProvider.php
+
+    # app/Providers/RouteServiceProvider.php
+    
+    protected $scan = [
+        ...,
+        'app/Http/Controllers/HomeController.php',
+    ]
+    
+
