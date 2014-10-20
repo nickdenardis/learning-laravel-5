@@ -26,7 +26,7 @@ Update the namespace of the app
 
 Setup the environment
 
-    mv .env.example .env
+    cp .env.example .env
 
     APP_ENV=local
     APP_KEY=SomeRandomString
